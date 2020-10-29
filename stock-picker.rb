@@ -1,5 +1,5 @@
 #make variable
-
+day_values = [17,3,6,9,15,8,6,1,10]
 #create method
 
     #create loop that goes through Array to find the greatest difference 
