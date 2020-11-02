@@ -1,9 +1,10 @@
 #make variable
-day_values = [17,3,6,9,15,8,6,1,10]
+daily_values = [17,3,6,9,15,8,6,1,10]
 #create method
 
     #create loop that goes through Array to find the greatest difference 
-
+      #create retainer value for highest difference
+      highest_earnings = 0
         #left value must be less than the right value
         i = 0
     while i < (daily_values.length - 1) do 
@@ -19,8 +20,13 @@ day_values = [17,3,6,9,15,8,6,1,10]
           if delta_2 <= 0
             #DO NOTHING
           else
-            puts "total is #{delta_2} i is #{daily_values[i]} and j is #{daily_values[j]}"
+            if delta_2 > highest_earnings
+              highest_earnings = delta_2
+            else 
+              #DO NOTHING
+            end
           end
+          puts "#{daily_values[i]} and #{highest_earnings}"
           j += 1
         end
       end
